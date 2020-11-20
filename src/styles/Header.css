@@ -1,0 +1,92 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	border-bottom: 1px solid lightgray;
+	background-color: white;
+	box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+
+	/* position: sticky; */
+	top: 0;
+	z-index: 99;
+
+	/* needed for the sidebars to not take up header space when scrolled  */
+	position: fixed;
+	width: 100%;
+}
+.header__left {
+	display: flex;
+	align-items: center;
+}
+.header__left > img {
+	object-fit: contain;
+	height: 40px;
+}
+
+.header__leftSearch {
+	display: flex;
+	align-items: center;
+	border-radius: 30px;
+	padding: 9px 6px;
+	background-color: #eff2f5;
+	margin-left: 20px;
+}
+.header__leftSearch > .header__leftSearch--icon {
+	color: gray !important;
+	font-size: larger;
+}
+
+.header__leftSearch > input {
+	border: none;
+	background-color: transparent;
+	outline: none;
+	font-size: 15px;
+}
+.header__middle {
+	display: flex;
+	/* flex: 1;
+    justify-content: center; */
+}
+.header__middle > .MuiSvgIcon-root {
+	width: 40px;
+	padding: 5px 15px;
+	margin: 0 25px;
+	color: gray;
+	font-size: 28px;
+	cursor: pointer;
+}
+.header__middle > .MuiSvgIcon-root:hover {
+	background-color: #eff2f5;
+	border-radius: 6px;
+	color: #1178f2;
+	border-bottom: 3px solid transparent;
+}
+.header__middle--active {
+	border-bottom: 3px solid #1178f2;
+	color: #1178f2 !important;
+}
+
+.header__right {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
+.header__right > .MuiAvatar-root {
+	cursor: pointer;
+	height: 33px;
+	width: 33px;
+}
+.header__right > h4 {
+	margin-left: 15px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.header__right > .MuiIconButton-root {
+	margin: 0 7px;
+	color: gray;
+}
+.header__right .MuiSvgIcon-root {
+	font-size: 20px;
+}

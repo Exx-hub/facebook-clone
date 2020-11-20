@@ -1,0 +1,9 @@
+.feed {
+	flex: 0.6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 70px;
+	/* needed for the sidebars to not take up header space when scrolled  */
+}

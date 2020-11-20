@@ -1,0 +1,87 @@
+.uploader {
+	display: flex;
+	flex-direction: column;
+	width: 84%;
+	background-color: #ffffff;
+	border-radius: 15px;
+	margin-top: 30px;
+	box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+}
+
+.uploader__top {
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	border-bottom: 1px solid #eff2f5;
+}
+.uploader__top > .MuiAvatar-root {
+	width: 35px;
+	height: 35px;
+}
+.uploader__top > form {
+	display: flex;
+	align-items: center;
+	flex: 1;
+}
+.uploader__top > form > input {
+	width: 100%;
+	border: none;
+	outline: none;
+	background-color: #f0f2f5;
+	border-radius: 33px;
+	padding: 10px 20px;
+	margin: 0 10px;
+	font-size: 18px;
+	cursor: pointer;
+	font-size: 14px;
+}
+.uploader__top > form > input:hover {
+	background-color: #dcdddd;
+}
+.uploader__topInput1 {
+	flex: 0.75;
+}
+.uploader__topInput2 {
+	flex: 0.25;
+}
+.uploader__top > form > button {
+	display: none;
+}
+
+.uploader__bottom {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 15px;
+}
+
+.uploader__bottomIcon {
+	display: flex;
+	padding: 10px;
+	width: 33%;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 8px;
+}
+.uploader__bottomIcon:hover {
+	background-color: #eff2f5;
+}
+
+.uploader__bottomIcon > h4 {
+	color: rgb(110, 109, 109);
+	margin-left: 10px;
+	font-size: 14px;
+}
+.uploader__bottomIcon--video {
+	color: #e63553;
+	font-size: 26px !important;
+}
+
+.uploader__bottomIcon--photo {
+	color: #41b35d;
+	font-size: 26px !important;
+}
+.uploader__bottomIcon--emoji {
+	color: #eab129;
+	font-size: 26px !important;
+}
